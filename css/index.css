@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#titulo{
+    text-align: center;
+    color: white;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: dodgerblue;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    min-width: 250px;
+}
+
+main>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    min-width: 250px;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    background-color: white;
+}
+
+form>div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+}
+
+.cant>input{
+    width: 50px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.cant>input:focus{
+    outline: none;
+}
+
+.cant>label{
+    width:100px;
+    text-align: center;
+}
+
+.cant{
+    padding-left: 0px;
+    width: 50%;
+    min-width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#descrip{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 250px;
+}
+
+textarea{
+    width: 80%;
+    min-width: 200;
+}
+
+button{
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: white;
+    color: dodgerblue;
+}

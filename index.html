@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Restaurante</title>
+</head>
+<body>
+    <main>
+    <h1 id="titulo">Restaurante Don Pollo</h1>
+    <form action="" name="formulario">
+        <div id="total">
+            <p id="precio">$0.00</p>
+        </div>
+        <div id="dcombos">
+        <select name="combos" id="combos">
+            <option value="">Combos</option>
+            <option value="7.25">Super Combo</option>
+            <option value="5.75">Combo Personal</option>
+            <option value="3.50">Combo Infantil</option>
+        </select>
+        <div class="cant">
+        <label>Cantidad de combos</label>
+           <input type="number" name="sierra" style="width:143;" onkeyup="validar_sierra(this.value)"> 
+        </div>
+        </div>
+        <div id="densalada">
+        <label for="ensa">Ensalada</label>
+        <input type="checkbox" name="ensa" id="ensa" value="1.50">
+        <div class="cant">
+        <label>Cantidad</label>
+        <input type="number" name="canEnsa" id="canEnsa" min="1" readonly>
+        </div>
+        </div>
+        <div id="dpapas">
+        <label for="papas">Papas Fritas</label>
+        <input type="checkbox" name="papas" id="papas" value="1.25">
+        <div class="cant">
+        <label>Cantidad</label>
+        <input type="number" name="canPapas" id="canPapas" min="1" readonly>
+        </div>
+        </div> 
+        <div id="dpolloG">
+        <label for="polloG">Pieza de Pollo Grande</label>
+        <input type="checkbox" name="polloG" id="polloG" value="1.75">
+        <div class="cant">
+        <label>Cantidad</label>
+        <input type="number" name="canPolloG" id="canPolloG" min="1" readonly>
+        </div>
+        </div>
+        <div id="dpolloM">
+        <label for="polloM">Pieza de Pollo Mediano</label>
+        <input type="checkbox" name="polloM" id="polloM" value="1.50">
+        <div class="cant">
+        <label>Cantidad</label>
+        <input type="number" name="canPolloM" id="canPolloM" min="1" readonly>
+        </div>
+        </div> 
+        <div id="dpolloP">
+        <label for="polloP">Pieza de Pollo Pequeña</label>
+        <input type="checkbox" name="polloP" id="polloP" value="1.25">
+        <div class="cant">
+        <label>Cantidad</label>
+        <input type="number" name="canPolloP" id="canPolloP" min="1" readonly>
+        </div>
+        </div>
+        <div id="dbebidaG">
+        <label for="bebidaG">Bebida Grande</label>
+        <input type="checkbox" name="bebidaG" id="bebidaG" value="1.50">
+        <div class="cant">
+        <label>Cantidad</label>
+        <input type="number" name="canBebidaG" id="canBebidaG" min="1" readonly>
+        </div>
+        </div>
+        <div id="dbebidaM">
+        <label for="bebidaM">Bebida Mediana</label>
+        <input type="checkbox" name="bebidaM" id="bebidaM" value="1.25">
+        <div class="cant">
+        <label>Cantidad</label>
+        <input type="number" name="canBebidaM" id="canBebidaM" min="1" readonly>
+        </div>
+        </div>
+        <div id="dbebidaP">
+        <label for="bebidaP">Bebida Pequeña</label>
+        <input type="checkbox" name="bebidaP" id="bebidaP" value="1.00">
+        <div class="cant">
+        <label>Cantidad</label>
+        <input type="number" name="canBebidaP" id="canBebidaP" min="1" readonly>
+        </div>
+        </div>
+        <div id="dcafe">
+        <label for="cafe">Café</label>
+        <input type="checkbox" name="cafe" id="cafe" value="0.50">
+        <div class="cant">
+        <label>Cantidad</label>
+        <input type="number" name="canCafe" id="canCafe" min="1" readonly>
+        </div>
+        </div>
+        <div id="dpostre">
+        <label for="postre">Postre</label>
+        <input type="checkbox" name="postre" id="postre" value="1.25">
+        <div class="cant">
+        <label>Cantidad</label>
+        <input type="number" name="canPostre" id="canPostre" min="1" readonly>
+        </div>
+        </div>
+        <div id="btn">
+        <p name="addDes" id="addDes" onclick="mostrarTxt()">Agregar comentarios</p>
+        </div>
+        <div id="descrip" style="visibility: hidden;">
+            <textarea name="des" id="des" cols="50" rows="10"></textarea>
+            <button name="sendDes" id="sendDes">Enviar Comentario</button>
+        </div>
+        <button type="submit" name="factu" id="factu" >Agregar comentarios</button>
+        </form>
+        
+        <div id="factura">
+
+        </div>
+    </main>
+</body>
+<script src="js/practica.js"></script>
+</html>
